@@ -40,5 +40,7 @@
             android:src="@android:drawable/ic_menu_delete"
             android:onClick="odpadkovykos"
  />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

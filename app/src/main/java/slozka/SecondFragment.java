@@ -12,6 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import java.io.File;
+import java.io.FilenameFilter;
+import java.util.Arrays;
+import java.util.Comparator;
 
 import slozka.dashcam_java.R;
 import slozka.dashcam_java.databinding.FragmentSecondBinding;
@@ -52,7 +55,8 @@ public class SecondFragment extends Fragment {
 
         try {
             if (dir.exists()) {
-                File[] files = dir.listFiles();
+                File[] files = dir.listFiles(new FilenameFilter() { public boolean accept(File dir, String name) { return !name.endsWith(".let"); } }); // Seřadit soubory podle data vytvoření vzestupně
+                Arrays.sort(files, new Comparator<File>() { @Override public int compare(File f1, File f2) { return Long.compare(f1.lastModified(), f2.lastModified()); } });
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < files.length; i++) {
                     sb.append(files[i].getName()).append("\n");
@@ -62,10 +66,14 @@ public class SecondFragment extends Fragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //konec původního přidání
+   //88888888888888888888888888888888888888888888888888888
 
+        //konec doplnění
 
-        //konec přidání
     }
+
+
 
     @Override
     public void onDestroyView() {

@@ -28,10 +28,22 @@
 
 
 
+
         <include
+            android:id="@+id/footer"
+            layout="@layout/nastavenitxt"
+
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="96dp"
+
+            />
+
+        <include
+            android:id="@+id/footer1"
             layout="@layout/activity_main2"
             tools:layout_editor_absoluteX="66dp"
-            tools:layout_editor_absoluteY="96dp" />
+            tools:layout_editor_absoluteY="96dp"
+            />
 
         <Button
             android:id="@+id/button_first"
@@ -39,12 +51,15 @@
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:text="@string/next"
-            android:textSize="7mm"
+            android:textSize="6mm"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.968"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

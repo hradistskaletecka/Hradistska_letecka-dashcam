@@ -6,5 +6,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Seznam</string>
     <string name="previous">Zpět</string>
+    <string name="buttonnehoda">Nehoda</string>
+    <string name="nastavenitxt">Nastavení</string>
 
 </resources>

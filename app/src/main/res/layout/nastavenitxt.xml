@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="slozka.MainActivity"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/nastavenitxt"
+        android:layout_width="288dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="430dp"
+        android:backgroundTint="#FFA500"
+        android:text="@string/nastavenitxt"
+        android:textColor="@color/white"
+        android:textSize="7mm"
+        android:onClick="buttonnehoda"
+        android:layout_marginRight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/edit1txt"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="390dp"
+        android:text="Tlačítko 1"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="350dp"
+        android:text="Nehoda"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/edit2txt"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="300dp"
+        android:text="Tlačítko 2"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="288dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="250dp"
+        android:text="Přednost"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/edit3txt"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="200dp"
+        android:text="Tlačítko 3"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="288dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="150dp"
+        android:text="Směrovka"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/edit4txt"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="100dp"
+        android:text="Tlačítko 4"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="288dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="50dp"
+        android:text="Ostatní"
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tlacitkonastaveni"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:onClick="tlacitkonastaveni"
+
+        android:textColor="@color/white"
+        android:textSize="4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

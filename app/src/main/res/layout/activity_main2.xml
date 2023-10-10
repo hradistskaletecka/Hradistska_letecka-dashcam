@@ -15,7 +15,7 @@
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="580dp"
-
+        android:visibility="invisible"
         android:text="None"
         android:textSize="7mm"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,8 +28,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="430dp"
         android:backgroundTint="#FFA500"
-        android:text="Nehoda"
-        android:textSize="7mm"
+        android:text="@string/buttonnehoda"
+        android:textSize="6mm"
         android:onClick="buttonnehoda"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
 
         android:layout_marginBottom="320dp"
         android:text="Přednost"
-        android:textSize="7mm"
+        android:textSize="6mm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="#FFFF00"
@@ -56,7 +56,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="210dp"
         android:text="Směrovky"
-        android:textSize="7mm"
+        android:textSize="6mm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="#00FFFF"
@@ -69,11 +69,17 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="100dp"
         android:text="Ostatní"
-        android:textSize="7mm"
+        android:textSize="6mm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="#00FF00"
         android:onClick="tlacitkoostatni"/>
+
+
+
+
+
+
 
 
 
