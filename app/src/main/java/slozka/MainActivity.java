@@ -841,7 +841,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Toast.makeText(this, "Aplikace se nyní vypne, je nutné ji znovu spustit.", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Aplikace se ukončila, je nutné ji znovu spustit.", Toast.LENGTH_LONG).show();
         //************** konec název tlačítka
        SystemClock.sleep(500); //ms
 finish();
